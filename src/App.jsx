@@ -3,6 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import CheckOut from "./components/checkOut";
+import SignOut from "./components/SignOut";
 
 function App() {
   const base_url = "https://todolist-api.hexschool.io";
@@ -22,7 +23,7 @@ function App() {
           <CheckOut base_url={base_url} />
         </div>
         <div className="col p-4">
-          <SignOut base_url={base_url} token={token} />
+          <SignOut base_url={base_url} token={token} setToken={setToken} />
         </div>
       </div>
     </>

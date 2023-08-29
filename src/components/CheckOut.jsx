@@ -60,7 +60,7 @@ function CheckOut({ base_url }) {
         {/*驗證按鈕*/}
         <button
           type="button"
-          className="btn btn-info mt-3"
+          className="btn btn-success mt-3"
           onClick={handleCheckOutClick}
         >
           驗證

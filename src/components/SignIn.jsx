@@ -97,7 +97,7 @@ function SignIn({ base_url, setToken }) {
         >
           登入
         </button>
-        {/*註冊後顯示的訊息*/}
+        {/*登入後顯示的訊息*/}
         <div
           className="alert alert-warning my-4 ml-3"
           role="alert"
