@@ -20,10 +20,10 @@ function SignIn({ base_url, setToken }) {
   };
   //處理點擊登入後的流程
   const handleSignInClick = async () => {
-    console.log(signInData);
+    // console.log(signInData);
     try {
       const res = await axios.post(`${signIn_api}`, signInData);
-      console.log(res);
+      // console.log(res);
       //從res.data中取得一個名為token的值，然後將這個token儲存到瀏覽器的 Cookie 中，並設定 Cookie 的過期時間為明天。讓我逐步解釋這段程式碼的功能：
       const { token } = res.data;
       //這一行程式碼建立了一個表示目前日期和時間的Date物件，然後將其儲存在變數tomorrow中。
